@@ -1,0 +1,18 @@
+[package]
+name = "sqlx-rus-bug"
+version = "0.1.0"
+authors = ["Maksim Vykhota <m.vykhota@protonmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+pretty_env_logger = "0.4.0"
+
+[dependencies.sqlx]
+version = "0.4.1"
+default-features = false
+features = [ "runtime-tokio-rustls", "macros", "postgres", "chrono", "tls" ]
+
+[dependencies.tokio]
+version = "0.2"
+features = [ "full" ]
